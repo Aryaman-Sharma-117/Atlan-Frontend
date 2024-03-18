@@ -1,3 +1,53 @@
+# Model Browser Web Application Documentation
+
+## Overview
+
+Welcome to the Model Browser Web Application! This documentation provides an overview of the features and functionalities of our React-based web application. Our platform aims to provide users with a seamless experience in browsing, discovering, and exploring various models available on our platform.
+
+## Features
+
+### 1. Browsing Models
+
+- **Description**: Users can browse through various models available on the platform.
+- **Implementation**: Models are listed on a dedicated page. The layout and information displayed for each model are customizable.
+- **Implementation Guidance**: We utilize a mock API, such as JSONPlaceholder, to fetch model data dynamically and enrich the browsing interface.
+
+### 2. Favourite Models Wall
+
+- **Description**: Favourite models, which receive more attention or have special significance, are showcased separately.
+- **Implementation**: A dedicated wall displays these Favourite models, explaining why they are highlighted (e.g., high views, user favorites).
+- **Implementation Guidance**: The determination of featured models can be done by users.
+
+### 3. Model Details Page
+
+- **Description**: Users can dive deeper into specific models to understand their functionality, usage, and provider information.
+- **Implementation**: Each model has its own dedicated page providing detailed information, including description, provider details, code snippets, and potential use cases.
+- **Implementation Guidance**: The page should offer a minimalistic design while providing essential details like model description, provider information, example code snippets, and use case scenarios.
+
+## Implementation Details
+
+- **Page Load Time**: The page load time of our application is 682ms. We measured this time using Performance API. Optimizing load time ensures a smooth user experience.
+
+## Performance Optimizations
+
+To decrease load time and increase performance, we implemented the following optimizations:
+
+- **Context API (useContext)**: Efficient global state management to minimize unnecessary re-renders and improve component performance.
+
+- **Code Splitting and Lazy Loading**: Splitting the application into smaller chunks and deferring the loading of non-essential resources until needed, reducing initial load time.
+
+## Technology Stack
+
+The Model Browser Web Application is built using the following technologies:
+
+- **JavaScript Framework**: React
+- **Routing**: React Router DOM
+- **HTTP Client**: Axios
+- **Styling**: Bootstrap
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
