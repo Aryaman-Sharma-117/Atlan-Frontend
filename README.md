@@ -48,9 +48,20 @@ const pageLoadTime = loadEndTime - loadStartTime;
 The Model Browser Web Application is built using the following technologies:
 
 - **JavaScript Framework**: React
+  ```bash
+  npm install react
 - **Routing**: React Router DOM
+  ```bash
+  npm install react-router-dom
+
 - **HTTP Client**: Axios
+  ```bash
+  npm install axios
+
 - **Styling**: Bootstrap
+    ```bash
+npm install bootstrap
+
 
 
 
