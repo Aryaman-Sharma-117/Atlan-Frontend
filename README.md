@@ -15,7 +15,7 @@ Welcome to the Model Browser Web Application! This documentation provides an ove
 ### 2. Favourite Models Wall
 
 - **Description**: Favourite models, which receive more attention or have special significance, are showcased separately.
-- **Implementation**: A dedicated wall displays these Favourite models, explaining why they are highlighted (e.g., high views, user favorites).
+- **Implementation**: A dedicated wall displays these Favourite models based on choice of user.
 - **Implementation Guidance**: The determination of featured models can be done by users.
 
 ### 3. Model Details Page
@@ -60,7 +60,7 @@ The Model Browser Web Application is built using the following technologies:
 
 - **Styling**: Bootstrap
   ```bash
-npm install bootstrap
+  npm install bootstrap
 
 
 
