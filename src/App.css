@@ -1,0 +1,365 @@
+.App {
+  text-align: center;
+}
+
+.not-found{
+   text-align: center;
+   margin-top: 10% 
+}
+.not-found>p{
+  color: black;
+  margin-top: 20px;
+}
+
+.not-found>h1{
+  color: black;
+}
+.not-found>button{
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding:8px 8px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  margin-top: 18px;
+  display: inline-block;
+}
+
+.home{
+  text-align: center;
+}
+
+.logocont {
+  position: relative;
+  width: 300px; 
+  height: 200px; 
+  background-color: lightgray;
+  padding: 20px; 
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.logocont:hover {
+  background-color: lightblue; 
+  transform: scale(1.05); 
+}
+
+.logocont img {
+  width: 100%; 
+  height: 100%; 
+  transition: transform 0.3s ease; 
+}
+
+.logocont:hover img {
+  transform: scale(1.2); 
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.input-field {
+  margin-bottom: 20px;
+}
+
+.input-field input {
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.generate-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.reset-button {
+  margin-left: 10px;
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.generated-text {
+  margin-top: 20px;
+}
+
+.explore-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.item-details {
+  display: flex;
+  align-items: center;
+}
+
+.item-details img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.item-details h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.item-details p {
+  margin: 0;
+  color: #666;
+}
+
+.toggle-favorite {
+  margin-top: 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #007bff;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #007bff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 20px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.favourites-container {
+  padding: 20px;
+}
+
+.favourites-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.favourite-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.item-details {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.item-details img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.item-info p {
+  margin: 0;
+  color: #666;
+}
+
+.remove-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dc3545;
+  color: #fff;
+  cursor: pointer;
+}
+
+.empty-message {
+  text-align: center;
+}
+
+.details-container {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.logocont {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.details-container h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.details-container h6 {
+    margin-bottom: 10px;
+}
+
+.details-container p {
+    margin-bottom: 20px;
+}
+
+.details-container a {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+.details-container {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.logocont {
+  width: 200px; /* Set the desired width */
+  height: 200px; /* Set the desired height */
+  object-fit: cover; /* Ensures the image covers the entire container */
+  border-radius: 8px; /* Make the image square by setting equal border-radius */
+  margin-bottom: 10px;
+}
+
+.details-container h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.details-container h6 {
+  margin-bottom: 10px;
+}
+
+.details-container p {
+  margin-bottom: 20px;
+}
+
+.details-container a {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+.custom-button {
+  background-color: #28a745; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.custom-button:hover {
+  background-color: #0e0f0f; 
+}
