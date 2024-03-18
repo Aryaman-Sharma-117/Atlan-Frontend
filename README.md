@@ -59,7 +59,7 @@ The Model Browser Web Application is built using the following technologies:
   npm install axios
 
 - **Styling**: Bootstrap
-    ```bash
+  ```bash
 npm install bootstrap
 
 
