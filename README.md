@@ -33,6 +33,13 @@ Welcome to the Model Browser Web Application! This documentation provides an ove
 To decrease load time and increase performance, we implemented the following optimizations:
 
 - **Context API (useContext)**: Efficient global state management to minimize unnecessary re-renders and improve component performance.
+ This was measured using the following JavaScript code snippet:
+
+```javascript
+const loadStartTime = window.performance.timing.navigationStart;
+const loadEndTime = window.performance.timing.loadEventEnd;
+const pageLoadTime = loadEndTime - loadStartTime;
+```
 
 - **Code Splitting and Lazy Loading**: Splitting the application into smaller chunks and deferring the loading of non-essential resources until needed, reducing initial load time.
 
